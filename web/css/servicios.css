@@ -1,0 +1,88 @@
+            .blur-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.08);
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .blur-nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .blur-nav .active {
+            border-bottom: 2px solid blue;
+        }
+        .nav-icons {
+            display: flex;
+            align-items: center;
+        }
+        .nav-icons i {
+            color: white;
+            margin-left: 15px;
+            font-size: 20px;
+        }
+body {
+	display: flex;
+	background: #000;
+	justify-content: center;
+        font-family:   sans-serif;
+}
+.content2 {
+	position: absolute;
+        margin-top: 20px;
+}
+.content2 h2 {
+	color: #fff;
+	font-size: 7em;
+	position: absolute;
+	transform: translate(-50%, -50%);
+        z-index: 999;
+}
+.content2 h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px #1d6af0;
+}
+.content2 h2:nth-child(2) {
+	color: #73aaf7;
+	animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+p{
+    color:#fff;
+    margin-top: 200px;
+}

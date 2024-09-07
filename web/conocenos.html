@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMOREBIT</title>
+    <link rel="stylesheet" href="css/conocenos.css">
+    <style>
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+    <script>
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.carousel-slide');
+            const totalSlides = slides.length;
+
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
+            }
+
+            const carouselContainer = document.querySelector('.carousel-container');
+            carouselContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setInterval(nextSlide, 3000); // Cambia automáticamente cada 3 segundos
+        });
+    </script>
+</head>
+<body>
+    <nav class="blur-nav">
+        <a href="index.html">SMOREBIT</a>
+        <a href="conocenos.html">Conócenos</a>
+        <a href="planeacion.html">Planeación Estratégica</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+        
+        <div class="nav-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+        </div>
+    </nav>
+    <br><br><br>
+    <div class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="images/memo.jpg" alt="Guillermo" height="580px" width="400px">
+                <div class="info">
+                    <h2>Guillermo Espíritu Martínez (Líder de operaciones)</h2>
+                    <p>Funciones:</p>
+                    <ul>
+                        <li>Supervisión de la producción de software</li>
+                        <li>Gestión de proyectos</li>
+                        <li>Optimización de procesos</li>
+                        <li>Implementación de estrategias operativas</li>
+                        <li>Coordinación del equipo de desarrollo</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/angel.jpg" alt="Ángel" height="580px" width="400px">
+                <div class="info">
+                    <h2>Peña Álvarez Ángel Rodrigo (CEO)</h2>
+                    <p>Funciones:</p>
+                    <ul>
+                        <li>Definición de la visión y misión de la empresa</li>
+                        <li>Desarrollo de estrategias de negocio</li>
+                        <li>Toma de decisiones clave</li>
+                        <li>Representación de la empresa</li>
+                        <li>Supervisión de todos los departamentos</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/mich.jpg" alt="Aisha" height="580px" width="400px">
+                <div class="info">
+                    <h2>Aisha Michelle Carrasco Montecinos (Finanzas)</h2>
+                    <p>Funciones:</p>
+                    <ul>
+                        <li>Gestión del presupuesto</li>
+                        <li>Control de gastos</li>
+                        <li>Elaboración de informes financieros</li>
+                        <li>Planificación fiscal</li>
+                        <li>Supervisión de la contabilidad</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/miri.jpg" alt="Miriam" height="420px" width="550px">
+                <div class="info">
+                    <h2>Calderón Cortés Miriam Zoé (Marketing)</h2>
+                    <p>Funciones:</p>
+                    <ul>
+                        <li>Desarrollo de campañas de marketing</li>
+                        <li>Gestión de redes sociales</li>
+                        <li>Investigación de mercado</li>
+                        <li>Creación de contenido publicitario</li>
+                        <li>Análisis de resultados de marketing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Controles del carrusel -->
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+</body>
+</html>

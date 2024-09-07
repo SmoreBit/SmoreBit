@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+            .blur-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.08);
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .blur-nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .blur-nav .active {
+            border-bottom: 2px solid blue;
+        }
+        .nav-icons {
+            display: flex;
+            align-items: center;
+        }
+        .nav-icons i {
+            color: white;
+            margin-left: 15px;
+            font-size: 20px;
+        }
+.content {
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: white;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4682b4;
+}
+h2,p,h1,form,label{
+    color:#fff;
+}
