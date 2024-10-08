@@ -5,7 +5,8 @@ window.onscroll = function() {
     } else {
         navbar.classList.remove('visible');
     }
-}
+};
+
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('nav a');
 
