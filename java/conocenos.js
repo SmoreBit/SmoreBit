@@ -1,7 +1,7 @@
 function toggleInfo(element) {
     const info = element.querySelector('.team-info');
     info.classList.toggle('expanded');
-}
+};
 
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('nav a');
