@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bluefin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sesion.css">
+    <script src="java/index.js"></script>
+</head>
+<body>
+    <nav class="blur-nav">
+        <a href="index.html" class="active">Bluefin</a>
+        <a href="educacion.html">Educación</a>
+        <a href="impactosocial.html">Impacto social</a>
+        <a href="juego.html">Juego</a>
+        <a href="sesion.html">Iniciar Sesión</a>
+        <a href="../index.html">Empresa</a>
+    </nav>
+
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <?php
+        $error = '';
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+
+            // Simulación de autenticación
+            if ($username === 'user' && $password === 'pass') {
+                echo "<p style='text-align: center; color: green;'>Inicio de sesión exitoso!</p>";
+            } else {
+                $error = 'Usuario o contraseña incorrectos.';
+            }
+        }
+        ?>
+
+        <?php if ($error): ?>
+            <p class="error-message"><?php echo $error; ?></p>
+        <?php endif; ?>
+
+        <form method="post" action="">
+            <div class="form-group">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-btn">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+        </ul>
+        <p>©2024 SmoreBit | Todos los derechos reservados</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
