@@ -6,6 +6,15 @@ window.onscroll = function() {
         navbar.classList.remove('visible');
     }
 };
+// Mostrar la ventana modal al cargar la página
+window.onload = function() {
+    document.getElementById('warningModal').style.display = 'block';
+};
+
+// Función para cerrar la ventana modal
+function closeModal() {
+    document.getElementById('warningModal').style.display = 'none';
+};
 
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('nav a');
