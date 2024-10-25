@@ -5,6 +5,61 @@ body {
     background-color: #000000;
 }
 
+.modal {
+    display: none; /* Oculta por defecto */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro */
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 18% auto; /* Aumentado para que esté más abajo */
+    padding: 30px; /* Espaciado aumentado */
+    border-radius: 15px; /* Bordes redondeados más pronunciados */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+    width: 80%; 
+    max-width: 600px; /* Ancho máximo aumentado */
+    text-align: center; /* Centra el texto */
+    animation: slideIn 0.8s ease; /* Animación de entrada más lenta */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close {
+    color: #ff4d4d; /* Color rojo para la "X" */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #c70000; /* Color más oscuro al pasar el mouse */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content p {
+    font-size: 20px; /* Tamaño de fuente más grande */
+    color: #333; /* Color de texto sólido */
+    margin: 15px 0; /* Espaciado alrededor del texto */
+}
+
 .blur-nav {
     position: fixed;
     top: 0;
