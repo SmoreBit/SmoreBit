@@ -1,3 +1,7 @@
+/* Mantén el import de fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Configuración general y el body */
 * {
     margin: 0;
     padding: 0;
@@ -5,61 +9,22 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.content2 {
-	position: absolute;
-        margin-top: 20px;
-}
-.content2 h2 {
-	color: #fff;
-	font-size: 7em;
-	position: absolute;
-	transform: translate(-50%, -50%);
-        z-index: 999;
-}
-.content2 h2:nth-child(1) {
-	color: transparent;
-	-webkit-text-stroke: 2px #1d6af0;
-}
-.content2 h2:nth-child(2) {
-	color: #73aaf7;
-	animation: animate 4s ease-in-out infinite;
-}
-@keyframes animate {
-	0%,
-	100% {
-		clip-path: polygon(
-			0% 45%,
-			16% 44%,
-			33% 50%,
-			54% 60%,
-			70% 61%,
-			84% 59%,
-			100% 52%,
-			100% 100%,
-			0% 100%
-		);
-	}
-	50% {
-		clip-path: polygon(
-			0% 60%,
-			15% 65%,
-			34% 66%,
-			51% 62%,
-			67% 50%,
-			84% 45%,
-			100% 46%,
-			100% 100%,
-			0% 100%
-		);
-	}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('img2.jpg') no-repeat center;
+    background-size: cover;
+    background-position: center;
 }
 
+/* Mantén el diseño del cabezal */
 .blur-nav {
     position: fixed;
     top: 0;
     width: 100%;
     backdrop-filter: blur(10px);
-    background-color: rgba(54, 118, 255, 0.24);
+    background-color: rgba(93, 144, 255, 0.718);
     padding: 15px 25px;
     display: flex;
     justify-content: space-between;
@@ -67,21 +32,91 @@
     z-index: 1000;
     overflow-x: auto;
 }
-.blur-nav .active {
-    border-bottom: 2px solid blue;
+
+/* Contenido de la segunda versión */
+.wrapper {
+    width: 420px;
+    margin: 80px auto;
+    background: rgba(255, 255, 255, 0.256);
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px 40px;
+    color: #ffffff;
 }
 
-body {
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.input-box {
+    position: relative;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #000000;
+    padding: 15px 45px 15px 20px;
+}
+
+.input-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #000000;
+}
+
+.remember-forgot {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin:0;
+    justify-content: space-between;
+    font-size: 14px;
 }
 
+.remember-forgot a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    color: #333;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
+/* Diseño del pie de página */
 footer {
     position: relative;
     width: 100%;
-    background: #3586ff;
+    background: #3586ff00;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -107,7 +142,7 @@ footer .menu li {
 
 footer .social_icon li a {
     font-size: 2em;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
@@ -145,46 +180,52 @@ footer .wave {
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(../images/wave.png);
+    background: url(../images/ave.png);
     background-size: 1000px 100px;
 }
-footer .wave#wave1{
+
+footer .wave#wave1 {
     z-index: 1000;
     opacity: 1;
     bottom: -2px;
     animation: animateWave 4s linear infinite;
 }
-footer .wave#wave2{
+
+footer .wave#wave2 {
     z-index: 999;
     opacity: .5;
     bottom: 8px;
     animation: animateWave_02 4s linear infinite;
 }
-footer .wave#wave3{
+
+footer .wave#wave3 {
     z-index: 1000;
     opacity: .2;
     bottom: -5px;
     animation: animateWave 3s linear infinite;
 }
-footer .wave#wave4{
+
+footer .wave#wave4 {
     z-index: 999;
     opacity: .7;
     bottom: 10px;
     animation: animateWave_02 3s linear infinite;
 }
- 
+
 @keyframes animateWave {
-    0%{
+    0% {
         background-position-x: 1000px;
-    }100%{
-        background-position-x: 0px;
     }
-}
-@keyframes animateWave_02 {
-    0%{
+    100% {
         background-position-x: 0px;
-    }100%{
-        background-position-x: 1000px;
     }
 }
 
+@keyframes animateWave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
