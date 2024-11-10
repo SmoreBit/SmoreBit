@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMOREBIT</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="java/contacto.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/smorebit.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="blur-nav">
+        <a href="index.jsp">SMOREBIT</a>
+        <a href="conocenos.html">Conócenos</a>
+        <a href="planeacion.html">Planeación Estratégica</a>
+        <a href="Bluefin/index.html">Bluefin</a>
+        <a href="contacto.html" class="active">Contacto</a>
+    </nav>
+    <div class="content">
+        <h1>Contacto</h1>
+        <p>Para cualquier consulta o información adicional, puedes contactarnos a través de los siguientes medios:</p>
+        <div class="contact-info">
+            <p><strong><i class="fas fa-envelope"></i> Correo electrónico:</strong> <a href="mailto:smorebit@gmail.com">smorebit@gmail.com</a></p>
+            <p><strong><i class="fab fa-instagram"></i> Instagram:</strong> <a href="https://www.instagram.com/smorebit" target="_blank">@smorebit</a></p>
+        </div>
+        <h2>Envíanos un mensaje</h2>
+        <form action="https://formspree.io/f/xovqanja" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
