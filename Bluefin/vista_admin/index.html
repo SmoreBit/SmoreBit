@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Barra de Navegación</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            padding-top: 60px;
+        }
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            margin: 0 10px;
+        }
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        @media (max-width: 600px) {
+            .navbar {
+                flex-wrap: wrap;
+            }
+            .navbar a {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="sesion.jsp">Sesión</a>
+        <a href="usuario.jsp">Usuario</a>
+        <a href="logros.jsp">Logros</a>
+        <a href="faqs.jsp">FAQs</a>
+        <a href="puzzle.jsp">Puzzle</a>
+        <a href="quiz.jsp">Quiz</a>
+        <a href="respuestas.jsp">Respuestas</a>
+        <a href="../sesion.html">Salir</a>
+    </div>
+    <h1 style="text-align: center;margin-top: 50px">Bienvenido Administrador :3</h1>
+    <p>Esta es la vista de administrador de Bluefin, eso significa que tienes 
+       CONTROL TOTAL sobre las tablas de la base de datos, llamese altas bajas y
+       cambios, puedes hacer todo eso, practicamente tienes todo el poder >:) arriba
+       verás las tablas que están dadas de alta en la base de datos de bluefin 
+       para acceder a ellas debes dar clic sobre la tabla que quieras editar
+       seguido de eso verás una tablota con todos los datos en la plataforma. Para editarla
+       simplemente presiona en el botón editar y abrirá otra página con los datos para 
+       que puedas editar TODOS los campos y para eliminarla debes dar en el botón de eliminar
+       SENCILLO no? :3 disfruta del poder y no borres cosas importantes chi? :3</p>
+
+</body>
+</html>
