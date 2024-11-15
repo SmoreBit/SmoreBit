@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluefin</title>
+    
+    <link rel="stylesheet" href="css/educacion.css">
+    <script src="java/educacion.js"></script>
+
+    <link rel="icon" href="../images/nutriabluefin.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Nabla:EHLT@24&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="css/articulos.css">
+</head>
+<body>
+<nav class="blur-nav">
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+      <img src="images/barritas.png" width="auto" height="30px" style="margin-top: 5px;">
+  </label>
+  <label class="logo">
+      <a href="index.html" class="active"><img src="images/BLUEFIN.png" width="auto" height="22px"></a>
+  </label>
+  <ul>
+      <li><a href="educacion.html"><img src="images/EDUCACION.png" id="educImage" width="auto" height="20px"></a></li>
+      <li><a href="impactosocial.html"><img src="images/IMPACTO_SOCIAL.png" width="auto" height="19px"></a></li>
+      <li><a href="juego.html"><img src="images/JUEGO.png" id="gameImage" width="auto" height="21px"></a></li>
+      <li><a href="sesion.html"><img src="images/INICIAR_SESION.png" width="auto" height="19px"></a></li>
+      <li><a href="../index.html"><img src="images/EMPRESA2.png" id="empImage"width="auto" height="20px"></a></li>
+  </ul>
+</nav>
+        <div class="main-content"></div>
+    <!-- Contenedor de opciones -->
+    <div class="options-container">
+        <div class="option" onclick="showSection('noticias')">Noticias</div>
+        <div class="option" onclick="showSection('mapa')">Mapa</div>
+        <div class="option" onclick="showSection('articulos')">Artículos</div>
+    </div>
+
+    <!-- Secciones de contenido -->
+    <div class="section" id="noticias">
+      <h1>Noticias</h1>
+      <div class="carousel-container">
+          <button class="carousel-button carousel-button-prev">&#8249;</button>
+          <div class="iframe-container">
+              <div class="iframe-item"><iframe src="https://es.mongabay.com/2024/07/primeras-imagenes-aereas-vaquita-marina-vida-silvestre-entrevista/"></iframe></div>
+              <div class="iframe-item"><iframe src="https://es.mongabay.com/2024/06/oceanos-en-crisis-informe-unesco-alerta-sobre-calentamiento-contaminacion-del-mar/"></iframe></div>
+              <div class="iframe-item"><iframe src="https://es.mongabay.com/2024/03/los-secretos-del-mar-cientificos-descubren-mas-de-cien-especies-marinas-que-podrian-ser-nuevas-para-la-ciencia/"></iframe></div>
+              <div class="iframe-item"><iframe src="https://es.mongabay.com/2022/01/noticias-marinas-que-marcaron-el-2021/"></iframe></div>
+          </div>
+          <button class="carousel-button carousel-button-next">&#8250;</button>
+      </div>
+  </div>
+  
+    
+    <div id="mapa" class="section">
+        <h1>Mapa de Acuarios</h1>
+        <!-- Contenedor del mapa -->
+        <div class="map-container">
+            <img src="https://i.ibb.co/mhdfTSG/imagenrobadita.png" alt="Mapa de México" style="width: 100%; height: auto;">
+            <!-- Marcadores de los acuarios -->
+            <!-- Ejemplo de un marcador -->
+            <div class="point" style="top: 58%; left: 51.5%;">
+                <a href="https://www.acuarioinbursa.com.mx" target="_blank">
+                    <i class='bx bxs-pin'></i>
+                    <div class="info">
+                        <img src="https://i.ibb.co/9h4sfqW/inbursa.jpg" alt="Acuario Inbursa">
+                        <strong>Acuario Inbursa</strong><br>
+                        Brinda una experiencia educativa con más de 350 especies marinas.
+                    </div>
+                </a>
+            </div>
+            <!-- Acuario Michin CDMX -->
+    <div class="point" style="top: 61%; left: 51%;">
+        <a href="https://cdmx-es.acuariomichin.com" target="_blank">
+          <i class='bx bxs-pin'></i>
+          <div class="info">
+            <img src="https://i.ibb.co/RP1bLMR/michin.png" alt="Acuario Michin CDMX">
+            <strong>Acuario Michin CDMX</strong><br>
+            Acuario interactivo y educativo con especies terrestres y marinas.
+            <small>Haz clic para más info.</small>
+          </div>
+        </a>
+      </div>
+  
+      <!-- Acuario Michin Guadalajara -->
+      <div class="point" style="top: 55%; left: 39%;">
+        <a href="https://gdl-es.acuariomichin.com" target="_blank">
+          <i class='bx bxs-pin'></i>
+          <div class="info">
+            <img src="https://i.ibb.co/CH3hsD3/michin-gdl.jpgg" alt="Acuario Michin Guadalajara">
+            <strong>Acuario Michin Guadalajara</strong><br>
+            Zonas temáticas con especies marinas y terrestres.
+            <small>Haz clic para más info.</small>
+          </div>
+        </a>
+      </div>
+  
+      <!-- Acuario de Veracruz -->
+      <div class="point" style="top: 59%; left: 62%;">
+        <a href="https://www.aquariumpuertodeveracruz.mx" target="_blank">
+          <i class='bx bxs-pin'></i>
+          <div class="info">
+            <img src="https://i.ibb.co/PW33cPF/veracruz.webp" alt="Acuario de Veracruz">
+            <strong>Acuario de Veracruz</strong><br>
+            El acuario más grande de México, hogar de muchas especies marinas.
+            <small>Haz clic para más info.</small>
+          </div>
+        </a>
+      </div>
+  
+      <!-- Acuario de Mazatlán -->
+      <div class="point" style="top: 41%; left: 30%;">
+        <a href="https://granacuario.com" target="_blank">
+          <i class='bx bxs-pin'></i>
+          <div class="info">
+            <img src="https://i.ibb.co/5KVxHp4/mazatlan.jpg" alt="Acuario de Mazatlán">
+            <strong>Acuario de Mazatlán</strong><br>
+            Exhibiciones marinas y espectáculos de lobos marinos.
+            <small>Haz clic para más info.</small>
+          </div>
+        </a>
+      </div>
+  
+      <!-- Acuario Interactivo de Cancún -->
+      <div class="point" style="top: 57%; left: 90%;">
+        <a href="https://www.interactiveaquariumcancun.com/es/nado-con-delfines?src=af&_affclk=adn:4998::CjwKCAjwyfe4BhAWEiwAkIL8sCse9tAHNKfqb_d46DbfeR3u3VkEq6dU5HJYibTcEQx8r0eo-wfz5hoCR_MQAvD_BwE:8003uu&gad_source=1" target="_blank">
+          <i class='bx bxs-pin'></i>
+          <div class="info">
+            <img src="https://i.ibb.co/P9QhKgB/cancun.jpg" alt="Acuario Interactivo de Cancún">
+            <strong>Acuario Interactivo de Cancún</strong><br>
+            Vive la experiencia de interactuar con tiburones.
+            <small>Haz clic para más info.</small>
+          </div>
+        </a>
+      </div>
+  
+      <!-- Acuario de Xcaret -->
+      <div class="point" style="top: 53%; left: 90%;">
+        <a href="https://www.xcaret.com/es/atracciones/acuario-de-arrecife-xcaret/" target="_blank">
+          <i class='bx bxs-pin'></i>
+          <div class="info">
+            <img src="https://i.ibb.co/NLJ32rh/xcaret.jpg" alt="Acuario Xcaret">
+            <strong>Acuario Xcaret</strong><br>
+            Dedicado a la vida marina del Caribe.
+            <small>Haz clic para más info.</small>
+          </div>
+        </a>
+      </div>
+    </div>
+        </div>
+    </div>
+
+    <div id="articulos" class="section">
+        <h1>Artículos</h1>
+        
+        <article>
+
+            <section class="sectionWrapper">
+          
+              <section class="swiper">
+          
+                <div class="parallax-bg" data-swiper-parallax="600" data-swiper-parallax-scale="0.85"></div>
+          
+                <div class="swiper-wrapper">
+                  <figure class="swiper-slide" id="card-1">
+                    <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+                        <img src="https://i.ibb.co/7jrms5q/nutria.jpg" alt="nutria" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+                        <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">Nutria marina</h2>
+                        <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">Fieles a su piedra favorita, son adorables</h4>
+                        <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+                            <p>
+                                Las nutrias son mamíferos acuáticos conocidos por su comportamiento juguetón y su habilidad para nadar con...
+                            </p>
+                        </figcaption>
+                        <a href="javascript:void(0);" title="Continuar Leyendo" onclick="toggleInfo('card-1')" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                            Continuar Leyendo
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                            </svg>
+                        </a>
+                        <div class="full-info" style="display: none;">
+                            <p style="color: white;">
+                                Las nutrias son mamíferos acuáticos conocidos por su comportamiento juguetón y su habilidad para nadar con gran agilidad. Se encuentran principalmente en ríos y costas de agua dulce o salada. Además, son famosas por utilizar herramientas, como las piedras, para romper los caparazones de los mariscos. Aman los hielos!
+                            </p>
+                        </div>
+                    </div>
+                </figure>
+          
+                  <figure class="swiper-slide" id="card-2">
+          
+                    <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+          
+                      <img src="https://rb.gy/qk577o" alt="medusa" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+          
+                      <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">
+                        Medusa
+                      </h2>
+          
+                      <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">
+                        No está hecha de gelatina
+                      </h4>
+          
+                      <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+          
+                        <p>
+                          Las medusas son criaturas marinas fascinantes conocidas por sus movimientos elegantes y cautivadores en el agua. Pertenecen al filo Cnidaria y existen en diversas formas, tamaños y colores. Una característica distintiva de las medusas es su campana en forma de paraguas, que utilizan para impulsarse en el océano.
+                        </p>
+          
+                      </figcaption>
+          
+                      <a href="javascript:void(0);" title="Continuar Leyendo" onclick="toggleInfo('card-2')" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                        Continuar Leyendo
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                        </svg>
+                      </a>
+                      <div class="full-info" style="display: none;">
+                        <p style="color: white;">
+                          Las medusas son criaturas marinas fascinantes conocidas por sus movimientos elegantes y cautivadores en el agua. Pertenecen al filo Cnidaria y existen en diversas formas, tamaños y colores. Una característica distintiva de las medusas es su campana en forma de paraguas, que utilizan para impulsarse en el océano.
+                        </p>
+                    </div>
+          
+                    </div>
+          
+                  </figure>
+          
+                  <figure class="swiper-slide" id="card-3">
+          
+                    <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+          
+                      <img src="https://rb.gy/tj2xqe" alt="pez payaso" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+          
+                      <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">
+                        Pez Payaso
+                      </h2>
+          
+                      <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">
+                        Un pequeño bromista
+                      </h4>
+          
+                      <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+          
+                        <p>
+                          El pez payaso es conocido por sus colores vibrantes y sus marcas distintivas. Estos pequeños peces de agua salada pertenecen a la familia Pomacentridae y se encuentran en aguas oceánicas cálidas, especialmente en la región del Indo-Pacífico. Se hicieron populares en parte gracias a la película animada "Buscando a Nemo."
+                        </p>
+          
+                      </figcaption>
+          
+                      <a href="javascript:void(0);" title="Continuar Leyendo" onclick="toggleInfo('card-3')" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                        Continuar Leyendo
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                        </svg>
+                      </a>
+                      <div class="full-info" style="display: none;">
+                        <p style="color: white;">
+                          El pez payaso es conocido por sus colores vibrantes y sus marcas distintivas. Estos pequeños peces de agua salada pertenecen a la familia Pomacentridae y se encuentran en aguas oceánicas cálidas, especialmente en la región del Indo-Pacífico. Se hicieron populares en parte gracias a la película animada "Buscando a Nemo."
+                        </p>
+                    </div>
+          
+                    </div>
+          
+                  </figure>
+          
+                  
+          
+                  <figure class="swiper-slide" id="card-4">
+          
+                    <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+          
+                      <img src="https://rb.gy/wua67g" alt="Pez ángel reina" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+          
+                      <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">
+                        Pez Ángel Reina
+                      </h2>
+          
+                      <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">
+                        ¡Tan angelical!
+                      </h4>
+          
+                      <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+          
+                        <p>
+                          El pez ángel reina, conocido científicamente como Holacanthus ciliaris, es una de las especies más coloridas y atractivas de peces marinos. Su patrón de color vibrante y elegante lo convierte en uno de los favoritos entre los entusiastas de acuarios y exploradores submarinos.
+                        </p>
+          
+                      </figcaption>
+          
+                      <a href="javascript:void(0);" title="Continuar Leyendo" onclick="toggleInfo('card-4')" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                        Continuar Leyendo
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                        </svg>
+                      </a>
+                      <div class="full-info" style="display: none;">
+                        <p style="color: white;">
+                          El pez ángel reina, conocido científicamente como Holacanthus ciliaris, es una de las especies más coloridas y atractivas de peces marinos. Su patrón de color vibrante y elegante lo convierte en uno de los favoritos entre los entusiastas de acuarios y exploradores submarinos.
+                        </p>
+                    </div>
+          
+                    </div>
+          
+                  </figure>
+                
+                <figure class="swiper-slide" id="card-5">
+          
+                  <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+        
+                    <img src="https://rb.gy/299e84" alt="pez cirujano azul" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+        
+                    <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">
+                      Pez Cirujano Azul
+                    </h2>
+        
+                    <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">
+                      42 Wallaby Way, Sydney
+                    </h4>
+        
+                    <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+        
+                      <p>
+                        El pez cirujano azul, conocido científicamente como Paracanthurus hepatus, es un pez marino llamativo por su coloración azul vívida y su forma corporal única. Originario de la región del Indo-Pacífico, estos peces se encuentran comúnmente en arrecifes de coral, lagunas y aguas tropicales.
+                      </p>
+        
+                    </figcaption>
+        
+                    <a href="javascript:void(0);" title="Continuar Leyendo" onclick="toggleInfo('card-5')" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                      Continuar Leyendo
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                      </svg>
+                    </a>
+                    <div class="full-info" style="display: none;">
+                      <p style="color: white;">
+                        El pez cirujano azul, conocido científicamente como Paracanthurus hepatus, es un pez marino llamativo por su coloración azul vívida y su forma corporal única. Originario de la región del Indo-Pacífico, estos peces se encuentran comúnmente en arrecifes de coral, lagunas y aguas tropicales.
+                      </p>
+                  </div>
+        
+                  </div>
+        
+                </figure>
+
+                <figure class="swiper-slide" id="card-6">
+                  <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+                      <img src="https://i.ibb.co/yn6mNtH/foca.jpg" alt="foca" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+                      <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">Foca común</h2>
+                      <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">PONK, PONK, rebotan con tanta ternura</h4>
+                      <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+                          <p>
+                            Las focas son expertas nadadoras y acrobatas del mar. Pasan mucho tiempo en el agua, pero también disfrutan del sol descansando en las rocas. Son muy sociales y se agrupan en grandes colonias. ¡Y cuando están felices, no dudan en darse palmadas en la panza!
+                          </p>
+                      </figcaption>
+                      <a href="javascript:void(0);" title="Continuar Leyendo" onclick="toggleInfo('card-6')" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                          Continuar Leyendo
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                          </svg>
+                      </a>
+                      <div class="full-info" style="display: none;">
+                          <p style="color: white;">
+                            Las focas son expertas nadadoras y acrobatas del mar. Pasan mucho tiempo en el agua, pero también disfrutan del sol descansando en las rocas. Son muy sociales y se agrupan en grandes colonias. ¡Y cuando están felices, no dudan en darse palmadas en la panza!
+                          </p>
+                      </div>
+                  </div>
+              </figure>
+
+              <figure class="swiper-slide" id="card-7">
+                <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+                    <img src="https://i.ibb.co/4NHSLxH/capy.jpg" alt="capy" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+                    <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">Capibara</h2>
+                    <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">Capibara... capibara capibara!!!</h4>
+                    <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+                        <p>
+                          Los capibaras son los 'relajados' del reino animal. Siempre se los puede ver descansando cerca del agua, disfrutando del sol y socializando con otros animales. ¡Son tan tranquilos que hasta los conejos y aves se sienten cómodos a su lado!
+                        </p>
+                    </figcaption>
+                    <a href="javascript:void(0);" title="Continuar Leyendo" onclick="toggleInfo('card-7')" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                        Continuar Leyendo
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                        </svg>
+                    </a>
+                    <div class="full-info" style="display: none;">
+                        <p style="color: white;">
+                          Los capibaras son los 'relajados' del reino animal. Siempre se los puede ver descansando cerca del agua, disfrutando del sol y socializando con otros animales. ¡Son tan tranquilos que hasta los conejos y aves se sienten cómodos a su lado!
+                        </p>
+                    </div>
+                </div>
+            </figure>
+            
+
+            <figure class="swiper-slide" id="card-8">
+              <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+                  <img src="https://i.ibb.co/BqjmwDs/tortuguita.jpg" alt="tortuguita" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+                  <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">Tortuga Marina</h2>
+                  <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">Suaaaveee...</h4>
+                  <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+                      <p>
+                        Las tortugas marinas siguen la corriente, viajando grandes distancias sin prisa. Aunque en tierra son lentas, en el agua son ágiles y pueden llegar a recorrer miles de kilómetros. ¡Todo a su ritmo, disfrutando de cada momento!
+                      </p>
+                  </figcaption>
+                  <a href="javascript:void(0);" title="Continuar Leyendo" onclick="toggleInfo('card-8')" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                      Continuar Leyendo
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                      </svg>
+                  </a>
+                  <div class="full-info" style="display: none;">
+                      <p style="color: white;">
+                        Las tortugas marinas siguen la corriente, viajando grandes distancias sin prisa. Aunque en tierra son lentas, en el agua son ágiles y pueden llegar a recorrer miles de kilómetros. ¡Todo a su ritmo, disfrutando de cada momento!
+                      </p>
+                  </div>
+              </div>
+          </figure>
+
+
+          <figure class="swiper-slide" id="card-9">
+            <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+                <img src="https://i.ibb.co/Cv9cS6M/Delfin.jpg" alt="Delfin" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+                <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">Delfín</h2>
+                <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">Los delfines, ¡siempre saltando de alegría!</h4>
+                <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+                    <p>
+                      Los delfines son conocidos por su inteligencia y su actitud juguetona. Viven en grupos sociales y pasan gran parte de su tiempo saltando y jugando en el agua. Son excelentes nadadores y pueden comunicarse entre sí con una serie de sonidos y gestos. Además, tienen una gran habilidad para aprender trucos, lo que los hace aún más fascinantes para los humanos. ¡Nunca dejan de sorprender!
+                    </p>
+                </figcaption>
+                <a href="javascript:void(0);" title="Continuar Leyendo" onclick="toggleInfo('card-9')" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                    Continuar Leyendo
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                    </svg>
+                </a>
+                <div class="full-info" style="display: none;">
+                    <p style="color: white;">
+                      Los delfines son conocidos por su inteligencia y su actitud juguetona. Viven en grupos sociales y pasan gran parte de su tiempo saltando y jugando en el agua. Son excelentes nadadores y pueden comunicarse entre sí con una serie de sonidos y gestos. Además, tienen una gran habilidad para aprender trucos, lo que los hace aún más fascinantes para los humanos. ¡Nunca dejan de sorprender!
+                    </p>
+                </div>
+            </div>
+        </figure>
+
+        <figure class="swiper-slide" id="card-10">
+          <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+              <img src="https://i.ibb.co/C8S1VF0/caballito-de-mar.jpg" alt="caballito de mar" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+              <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">Caballito de mar</h2>
+              <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">Mueren de amor<3</h4>
+              <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+                  <p>
+                    El caballo de mar es uno de los animales más curiosos del océano. Aunque parece un caballito, en realidad es un pez. Nadan erguido, como si estuvieran de pie, y se camuflan entre las plantas marinas para mantenerse a salvo. Son conocidos por sus movimientos suaves y su estilo único de nadar. ¡Un verdadero experto en elegancia submarina!
+                  </p>
+              </figcaption>
+              <a href="javascript:void(0);" title="Continuar Leyendo" onclick="toggleInfo('card-10')" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                  Continuar Leyendo
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                  </svg>
+              </a>
+              <div class="full-info" style="display: none;">
+                  <p style="color: white;">
+                    El caballo de mar es uno de los animales más curiosos del océano. Aunque parece un caballito, en realidad es un pez. Nadan erguido, como si estuvieran de pie, y se camuflan entre las plantas marinas para mantenerse a salvo. Son conocidos por sus movimientos suaves y su estilo único de nadar. ¡Un verdadero experto en elegancia submarina!
+                  </p>
+              </div>
+          </div>
+      </figure>
+                    <figure class="swiper-slide" id="card-11">
+          
+        <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+
+          <img src="https://i.ibb.co/9pbFGx7/ajolote.jpg" alt="Ajolote" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+
+          <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">
+            Ajolote
+          </h2>
+
+          <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">
+            Eterno sonriente y maestro de la regeneración
+          </h4>
+
+          <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+
+            <p>
+              El ajolote es un anfibio mexicano conocido por su capacidad de regenerar extremidades. Tiene branquias externas y conserva su fase larval durante toda su vida. Está en peligro crítico de extinción debido a la pérdida de su hábitat y la contaminación.
+            </p>
+
+          </figcaption>
+
+          <a href="javascript:void(0);" title="Continuar Leyendo" onclick="toggleInfo('card-11')" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+            Continuar Leyendo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+            </svg>
+          </a>
+          <div class="full-info" style="display: none;">
+            <p style="color: white;">
+              El ajolote es un anfibio mexicano conocido por su capacidad de regenerar extremidades. Tiene branquias externas y conserva su fase larval durante toda su vida. Está en peligro crítico de extinción debido a la pérdida de su hábitat y la contaminación.
+            </p>
+        </div>
+
+        </div>
+
+      </figure>
+
+            </div>
+        </section>
+    </section>
+</article>
+
+<script>
+    function toggleInfo(cardId) {
+        var info = document.querySelector(`#${cardId} .full-info`);
+        info.style.display = (info.style.display === 'none' || info.style.display === '') ? 'block' : 'none';
+    }
+</script>
+          
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script src="java/articulos.js"></script>
+        </div>
+          <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icon">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+            </ul>
+            <p>©2024 SmoreBit | Todos los derechos reservados</p>
+        </footer>
+    
+        <script>
+            function showSection(sectionId) {
+                // Ocultar todas las secciones
+                document.querySelectorAll('.section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                // Mostrar la sección seleccionada
+                document.getElementById(sectionId).style.display = 'block';
+            }
+    
+            // Mostrar "Noticias" por defecto
+            showSection('noticias');
+        </script>
+    
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+    </html>
