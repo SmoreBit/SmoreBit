@@ -1,0 +1,280 @@
+        /* General Styles */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.9; /* Ajusta la opacidad del video */
+        }
+
+        .container {
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px; /* Añadir padding para no cortar el contenido */
+            position: relative;
+            z-index: 1;
+        }
+
+        .form-box {
+            background: rgba(255, 255, 255, 0.2); /* Fondo blanco con transparencia */
+            backdrop-filter: blur(10px); /* Efecto de desenfoque */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 600px; /* Se asegura que el formulario no sea demasiado grande */
+            color: white; /* Para asegurar que el texto sea visible */
+        }
+
+        .form-box h2 {
+            text-align: center;
+            color: #ffffff; /* Título en blanco para destacar */
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 12px; /* Ajustar el padding para mayor uniformidad */
+            margin: 10px 0; /* Espacio igual arriba y abajo */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.6);
+            color: #000;
+            transition: border-color 0.3s, background-color 0.3s;
+            box-sizing: border-box; /* Asegura que padding y border estén dentro del ancho */
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        select:focus {
+            border-color: #007BFF; /* Cambiar el color del borde al hacer foco */
+            background-color: rgba(255, 255, 255, 0.8); /* Cambiar un poco el color de fondo */
+            outline: none; /* Eliminar el borde azul predeterminado de los navegadores */
+        }
+
+        .icon-button {
+            width: 100%;
+            padding: 12px; /* Asegurar el mismo padding que los inputs para uniformidad */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.6);
+            color: #0056b3;
+            text-align: left;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s;
+            box-sizing: border-box; /* Asegura que padding y border estén dentro del ancho */
+        }
+
+        .icon-button:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .icon-dropdown .dropdown-content {
+            display: none;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.2); /* Fondo blanco con transparencia */
+            backdrop-filter: blur(10px); /* Efecto de desenfoque */
+            border-radius: 10px;
+            min-width: 300px;
+            border: 1px solid rgba(255, 255, 255, 0.4); /* Borde con un poco de transparencia */
+            z-index: 1;
+            padding: 10px; /* Añadir padding para el contenido */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Añadir un poco de sombra */
+            gap: 10px; /* Espacio entre los elementos */
+        }
+
+        .icon-dropdown .dropdown-content.show {
+            display: flex;
+            flex-direction: row; /* Mostrar las opciones de izquierda a derecha */
+            align-items: flex-start;
+            gap: 20px; /* Espacio entre cada opción */
+        }
+
+        .icon-option {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column; /* Imagen arriba y texto abajo */
+            align-items: center;
+            transition: background-color 0.3s;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .icon-option:hover {
+            background-color: rgba(255, 255, 255, 0.4); /* Fondo ligeramente diferente al pasar el mouse */
+        }
+
+        .icon-option img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 5px; /* Espacio entre la imagen y el texto */
+        }
+
+        .icon-option span {
+            color: #ffffff;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .submit-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            box-sizing: border-box; /* Asegura que padding y border estén dentro del ancho */
+        }
+
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Navigation Bar Styles */
+        .blur-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            backdrop-filter: blur(5px);
+            background-color: rgba(7, 134, 253, 0.623);
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            padding: 0 5px;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            display: none;
+            z-index: 1001;
+        }
+
+        #check {
+            display: none;
+        }
+
+        nav ul li:hover a {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.2);
+            box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Media Queries */
+        @media (max-width: 850px) {
+            .checkbtn {
+                display: block;
+            }
+
+            ul {
+                position: fixed;
+                top: 71px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 60px);
+                background-color: rgba(23, 7, 253, 0.623);
+                flex-direction: column;
+                align-items: center;
+                transition: all 0.5s ease;
+                z-index: 999;
+                padding-top: 20px;
+            }
+
+            nav ul li {
+                margin: 20px 0;
+            }
+
+            nav ul li a {
+                color: white;
+                font-size: 24px;
+            }
+
+            #check:checked ~ ul {
+                left: 0;
+            }
+
+            .logo {
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .form-box {
+                padding: 20px; /* Reducir padding para tabletas */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .form-box {
+                padding: 15px; /* Reducir más el padding para móviles */
+            }
+
+            .form-box h2 {
+                font-size: 1.5em; /* Reducir tamaño del título en dispositivos móviles */
+            }
+
+            input[type="text"],
+            input[type="number"],
+            input[type="email"],
+            input[type="password"],
+            select {
+                font-size: 1em; /* Ajustar tamaño del texto en inputs */
+            }
+
+            .icon-button,
+            .submit-button {
+                font-size: 1em; /* Ajustar tamaño de los botones */
+            }
+        }
