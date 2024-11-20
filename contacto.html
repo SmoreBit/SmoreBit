@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMOREBIT</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="java/contacto.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/smorebit.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="blur-nav">
+        <a href="index.html" class="active">SMOREBIT</a>
+        <a href="conocenos.html">Conócenos</a>
+        <a href="planeacion.html">Planeación Estratégica</a>
+        <div class="dropdown">
+        <a href="Bluefin/index.html" class="dropbtn">Servicios</a>
+            <div class="dropdown-content">
+                <a href="Bluefin/index.html">BLUEFIN</a>
+            </div>
+        </div>        
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="contact-container">
+        <div class="contact-image">
+            <img src="images/contacto.png" alt="Descripción de la imagen">
+        </div>
+        <div class="contact-content">
+            <h1>Contacto</h1>
+            <p>Para cualquier consulta o información adicional, puedes contactarnos a través de los siguientes medios:</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Correo electrónico: <a href="mailto:smorebit@gmail.com">smorebit@gmail.com</a></p>
+                <p><i class="fab fa-instagram"></i> Instagram: <a href="https://instagram.com/smorebit" target="_blank">@smorebit</a></p>
+            </div>
+            <h2>Envíanos un mensaje</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+            
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email">
+            
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message"></textarea>
+            
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
